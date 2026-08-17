@@ -2433,6 +2433,16 @@ body {
 }
 
 @media (min-width: 993px) {
+    .header-container {
+        position: relative;
+    }
+
+    .nav {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
     .header {
         padding-left: 0;
         padding-right: 20px;
