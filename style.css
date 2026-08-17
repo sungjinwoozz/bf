@@ -603,6 +603,10 @@ img {
     animation: fadeInUp 1s ease-out 0.3s both;
 }
 
+html.lang-en .hero-subtitle {
+    display: none;
+}
+
 /* ===========================
    SECTIONS (SHARED)
    =========================== */
