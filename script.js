@@ -547,11 +547,135 @@ if (heroSection) {
 })();
 
 // ===========================
-// DISABLE RIGHT-CLICK CONTEXT MENU
+// SOURCE CODE PROTECTION
 // ===========================
-document.addEventListener('contextmenu', (e) => {
-    e.preventDefault();
-});
+(function () {
+    'use strict';
+
+    // --- 1. Disable Right-Click Context Menu ---
+    document.addEventListener('contextmenu', (e) => {
+        e.preventDefault();
+    });
+
+    // --- 2. Block Keyboard Shortcuts for Viewing Source ---
+    document.addEventListener('keydown', (e) => {
+        // F12 — DevTools
+        if (e.key === 'F12' || e.keyCode === 123) {
+            e.preventDefault();
+            e.stopPropagation();
+            return false;
+        }
+
+        // Ctrl+Shift+I — DevTools (Inspect)
+        if (e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'i' || e.keyCode === 73)) {
+            e.preventDefault();
+            e.stopPropagation();
+            return false;
+        }
+
+        // Ctrl+Shift+J — DevTools (Console)
+        if (e.ctrlKey && e.shiftKey && (e.key === 'J' || e.key === 'j' || e.keyCode === 74)) {
+            e.preventDefault();
+            e.stopPropagation();
+            return false;
+        }
+
+        // Ctrl+Shift+C — DevTools (Element Picker)
+        if (e.ctrlKey && e.shiftKey && (e.key === 'C' || e.key === 'c' || e.keyCode === 67)) {
+            e.preventDefault();
+            e.stopPropagation();
+            return false;
+        }
+
+        // Ctrl+U — View Source
+        if (e.ctrlKey && (e.key === 'U' || e.key === 'u' || e.keyCode === 85)) {
+            e.preventDefault();
+            e.stopPropagation();
+            return false;
+        }
+
+        // Ctrl+S — Save Page
+        if (e.ctrlKey && (e.key === 'S' || e.key === 's' || e.keyCode === 83)) {
+            e.preventDefault();
+            e.stopPropagation();
+            return false;
+        }
+
+        // Ctrl+A — Select All (optional content protection)
+        if (e.ctrlKey && (e.key === 'A' || e.key === 'a' || e.keyCode === 65)) {
+            e.preventDefault();
+            e.stopPropagation();
+            return false;
+        }
+    });
+
+    // --- 3. Prevent Image Dragging ---
+    document.addEventListener('dragstart', (e) => {
+        if (e.target.tagName === 'IMG') {
+            e.preventDefault();
+        }
+    });
+
+    // --- 4. Disable Text Selection via CSS ---
+    document.addEventListener('DOMContentLoaded', () => {
+        const style = document.createElement('style');
+        style.textContent = `
+            body {
+                -webkit-user-select: none !important;
+                -moz-user-select: none !important;
+                -ms-user-select: none !important;
+                user-select: none !important;
+            }
+        `;
+        document.head.appendChild(style);
+    });
+
+    // --- 5. DevTools Open Detection ---
+    const devtoolsDetector = {
+        _isOpen: false,
+        _threshold: 160,
+
+        check: function () {
+            const widthDiff = window.outerWidth - window.innerWidth > this._threshold;
+            const heightDiff = window.outerHeight - window.innerHeight > this._threshold;
+
+            if (widthDiff || heightDiff) {
+                if (!this._isOpen) {
+                    this._isOpen = true;
+                    // Redirect or blank the page when DevTools is detected
+                    document.body.innerHTML = '';
+                    document.title = '';
+                    window.location.href = 'about:blank';
+                }
+            } else {
+                this._isOpen = false;
+            }
+        }
+    };
+
+    // Check periodically
+    setInterval(() => devtoolsDetector.check(), 1000);
+
+    // --- 6. Block console access in production ---
+    if (window.location.hostname !== 'localhost' && window.location.hostname !== '127.0.0.1') {
+        const noop = function () { };
+        ['log', 'debug', 'info', 'warn', 'table', 'dir', 'trace', 'group', 'groupEnd', 'time', 'timeEnd', 'profile', 'profileEnd', 'count'].forEach(function (method) {
+            if (console[method]) {
+                console[method] = noop;
+            }
+        });
+    }
+
+    // --- 7. Disable "Save As" dialog ---
+    document.addEventListener('keydown', (e) => {
+        // Ctrl+Shift+S — Save As
+        if (e.ctrlKey && e.shiftKey && (e.key === 'S' || e.key === 's')) {
+            e.preventDefault();
+            return false;
+        }
+    });
+
+})();
 
 // ===========================
 // FLOATING CONTACT BUTTON TOGGLE
