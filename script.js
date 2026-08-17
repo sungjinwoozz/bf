@@ -139,7 +139,7 @@ const translations = {
         "nav.contact": "Contact Us",
 
         // Hero
-        "hero.title": "Good Service, <span class=\"gradient-text\">Honesty</span>, and<br>Customer Satisfaction are Our Top Priorities",
+        "hero.title": "Good Service, <span class=\"gradient-text\">Honesty</span>, and<br>Customer Satisfaction Are Our Top Priorities",
         "hero.subtitle": "GOOD SERVICE, HONESTY, AND CUSTOMER SATISFACTION ARE OUR TOP PRIORITIES",
         "hero.btn_explore": "Our Services",
         "hero.btn_contact": "Contact Us",
