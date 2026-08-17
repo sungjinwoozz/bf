@@ -2455,3 +2455,35 @@ body {
         padding: 44px 20px;
     }
 }
+
+/* Navigation dropdown styling inspired by the reference menu. */
+.nav-services-dropdown {
+    min-width: 286px;
+    padding: 10px 0;
+    background: #ffffff;
+    border: 0;
+    border-radius: 8px;
+    box-shadow: 0 12px 30px rgba(15, 23, 42, 0.18);
+}
+
+.nav-services-dropdown li a {
+    padding: 13px 20px;
+    color: #5b6470;
+    border-left: 0;
+    font-size: .95rem;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.nav-services-dropdown li a:hover {
+    padding-left: 20px;
+    background: #f2fbf5;
+    color: var(--accent-2);
+    border-left: 0;
+}
+
+.nav-item-has-dropdown:hover > .nav-link,
+.nav-item-has-dropdown.open > .nav-link {
+    color: var(--accent-2);
+    background: #edf6ef;
+}
