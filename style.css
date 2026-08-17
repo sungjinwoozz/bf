@@ -334,7 +334,7 @@ img {
     font-size: var(--font-size-xl);
     font-weight: 900;
     letter-spacing: 1px;
-    color: var(--text-primary);
+    color: var(--accent-4);
 }
 
 .logo-highlight {
