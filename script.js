@@ -502,7 +502,11 @@ if (floatingBtn && floatingContact) {
     floatingBtn.addEventListener('click', (e) => {
         e.preventDefault();
         e.stopPropagation();
-        floatingContact.classList.toggle('active');
+        floatingContact.classList.remove('active');
+        document.getElementById('contact')?.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        });
     });
 
     document.addEventListener('click', (e) => {
