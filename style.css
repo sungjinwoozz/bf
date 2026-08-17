@@ -1505,7 +1505,7 @@ body {
 }
 
 .logo-text {
-    font-size: 1.12rem;
+    font-size: 1.35rem;
     letter-spacing: 0.35px;
 }
 
@@ -1894,7 +1894,7 @@ body {
 
 /* Add breathing room between the hero and the service banners. */
 .ap-services-section {
-    padding-top: 32px;
+    padding-top: 0;
 }
 
 .services-section-heading {
@@ -2017,7 +2017,7 @@ body {
 
 @media (max-width: 768px) {
     .ap-services-section {
-        padding-top: 20px;
+        padding-top: 0;
     }
 
     .services-section-heading {
@@ -2268,7 +2268,7 @@ body {
     }
 
     .logo-text {
-        font-size: .98rem;
+        font-size: 1.15rem;
     }
 
     .lang-dropdown-btn {
@@ -2365,7 +2365,7 @@ body {
 
 @media (max-width: 480px) {
     .logo-text {
-        font-size: .82rem;
+        font-size: 1rem;
         letter-spacing: 0;
     }
 

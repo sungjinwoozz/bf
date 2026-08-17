@@ -13,7 +13,7 @@ const translations = {
 
         // Hero
         "hero.title": "บริการดี <span class=\"gradient-text\">ซื่อสัตย์</span><br>ความพึงพอใจของลูกค้าสำคัญ",
-        "hero.subtitle": "GOOD SERVICE, HONESTY, CUSTOMER SATISFACTION IS OUR TOP PRIORITY",
+        "hero.subtitle": "GOOD SERVICE, HONESTY, AND CUSTOMER SATISFACTION ARE OUR TOP PRIORITIES",
         "hero.btn_explore": "ดูบริการของเรา",
         "hero.btn_contact": "ติดต่อเรา",
 
@@ -139,8 +139,8 @@ const translations = {
         "nav.contact": "Contact Us",
 
         // Hero
-        "hero.title": "Good Service, <span class=\"gradient-text\">Honesty</span>,<br>Customer Satisfaction is Our Top Priority",
-        "hero.subtitle": "GOOD SERVICE, HONESTY, CUSTOMER SATISFACTION IS OUR TOP PRIORITY",
+        "hero.title": "Good Service, <span class=\"gradient-text\">Honesty</span>,<br>Customer Satisfaction Is Our Top Priority",
+        "hero.subtitle": "GOOD SERVICE, HONESTY, AND CUSTOMER SATISFACTION ARE OUR TOP PRIORITIES",
         "hero.btn_explore": "Our Services",
         "hero.btn_contact": "Contact Us",
 
