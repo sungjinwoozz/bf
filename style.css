@@ -1518,8 +1518,14 @@ body {
     -webkit-text-fill-color: var(--text-primary);
 }
 
+.logo > .logo-text {
+    color: var(--accent-4);
+    -webkit-text-fill-color: var(--accent-4);
+}
+
 .logo > .logo-text > .logo-text {
     color: var(--accent-4);
+    -webkit-text-fill-color: var(--accent-4);
 }
 
 .nav-list {
