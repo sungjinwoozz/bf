@@ -368,11 +368,25 @@ hamburger.addEventListener('click', () => {
 
 navLinks.forEach(link => {
     link.addEventListener('click', () => {
+        if (window.innerWidth <= 992 && link.closest('.nav-item-has-dropdown')) {
+            return;
+        }
         hamburger.classList.remove('active');
         nav.classList.remove('open');
         document.body.style.overflow = '';
     });
 });
+
+const serviceNavItem = document.querySelector('.nav-item-has-dropdown');
+const serviceNavTrigger = document.getElementById('nav-ap-services');
+if (serviceNavItem && serviceNavTrigger) {
+    serviceNavTrigger.addEventListener('click', (e) => {
+        if (window.innerWidth <= 992) {
+            e.preventDefault();
+            serviceNavItem.classList.toggle('open');
+        }
+    });
+}
 
 // ===========================
 // ACTIVE NAV LINK ON SCROLL
