@@ -2431,3 +2431,15 @@ body {
         bottom: 16px;
     }
 }
+
+@media (min-width: 993px) {
+    .header {
+        padding-left: 0;
+        padding-right: 20px;
+    }
+
+    .header-container {
+        max-width: none;
+        padding-left: 0;
+    }
+}
