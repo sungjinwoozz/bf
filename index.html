@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="AP Cargo Logistics & BF Transport - บริการขนส่งคุณภาพ บริการดี ซื่อสัตย์ ความพึงพอใจของลูกค้าสำคัญ">
+    <title>AP Cargo Logistics & BF Transport | บริการขนส่งและโลจิสติกส์ครบวงจร</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Noto+Sans+Thai:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ========== HEADER ========== -->
+    <header class="header" id="header">
+        <div class="header-container">
+            <a href="#" class="logo" id="logo">
+                <span class="logo-text">AP Cargo Logistics<span class="logo-highlight"> &</span><span class="logo-text">
+                        BF Transport</span></span>
+            </a>
+
+            <nav class="nav" id="nav">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link active" id="nav-home" data-i18n="nav.home">หน้าหลัก</a></li>
+                    <li class="nav-item-has-dropdown">
+                        <a href="#" class="nav-link" id="nav-ap-services"
+                            data-i18n="nav.services">บริการ ▾</a>
+                        <ul class="nav-services-dropdown">
+                            <li><a href="service-customs.html">บริการพิธีการศุลกากร</a></li>
+                            <li><a href="service-transport.html">บริการด้านขนส่ง</a></li>
+                            <li><a href="service-sea.html">บริการขนส่งทางเรือ</a></li>
+                            <li><a href="service-air.html">บริการขนส่งทางอากาศ</a></li>
+                            <li><a href="service-packing.html">บริการแพ็คและย้ายสินค้า</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#our-work" class="nav-link" id="nav-gallery" data-i18n="nav.gallery">ผลงานของเรา</a>
+                    </li>
+                    <li><a href="#services-vehicles" class="nav-link" id="nav-services"
+                            data-i18n="nav.vehicles">รถบริการ</a></li>
+                    <li><a href="#policy" class="nav-link" id="nav-policy" data-i18n="nav.policy">นโยบาย</a></li>
+                    <li><a href="#contact" class="nav-link" id="nav-contact" data-i18n="nav.contact">ติดต่อเรา</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-right">
+                <div class="lang-dropdown" id="lang-dropdown">
+                    <button class="lang-dropdown-btn" id="lang-dropdown-btn" aria-label="Change language">
+                        <svg class="lang-globe" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#000000"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10" />
+                            <path d="M2 12h20" />
+                            <path
+                                d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+                        </svg>
+                        <span class="lang-current" id="lang-current">ไทย</span>
+                        <span class="lang-chevron">▾</span>
+                    </button>
+                    <div class="lang-dropdown-menu" id="lang-dropdown-menu">
+                        <button class="lang-option" data-lang="th" id="lang-opt-th">ไทย</button>
+                        <button class="lang-option" data-lang="en" id="lang-opt-en">English</button>
+                    </div>
+                </div>
+
+                <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ========== MAIN ========== -->
+    <main class="main">
+
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <!-- Slideshow Background -->
+            <div class="hero-slideshow" id="slideshow-track">
+                <div class="slide active" data-slide="0">
+                    <img src="https://images.unsplash.com/photo-1618317497044-cf78ada06f92?auto=format&fit=crop&w=2200&q=85" alt="ท่าเรือและเรือขนส่งสินค้าระหว่างประเทศ">
+                </div>
+                <div class="slide" data-slide="1">
+                    <img src="https://www.ewnsglobal.com/assets/img/home1/bannn.jpeg" alt="การขนส่งสินค้าในท่าเรือ">
+                </div>
+                <div class="slide" data-slide="2">
+                    <img src="https://www.test.drayalliance.com/home/assets/media/images/port-aerial-2.jpg" alt="ท่าเรือขนส่งสินค้าทางทะเลมุมสูง">
+                </div>
+                <div class="slide" data-slide="3">
+                    <img src="https://www.barig.aero/templates/yootheme/cache/fracht2-0e7e0211.jpeg" alt="คลังสินค้าสำหรับขนส่งสินค้าทางอากาศ">
+                </div>
+                <div class="slide" data-slide="4">
+                    <img src="https://images.unsplash.com/photo-1769144256207-bc4bb75b29db?auto=format&fit=crop&w=2200&q=85" alt="เรือขนส่งสินค้ากับตู้คอนเทนเนอร์">
+                </div>
+            </div>
+
+            <div class="hero-bg-overlay"></div>
+            <div class="hero-particles">
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+            </div>
+            <div class="hero-content">
+                <h1 class="hero-title" data-i18n="hero.title" data-i18n-html="true">บริการดี <span
+                        class="gradient-text">ซื่อสัตย์</span><br>ความพึงพอใจของลูกค้าคือสิ่งสำคัญ</h1>
+                <p class="hero-subtitle" data-i18n="hero.subtitle">GOOD SERVICE, HONEST, CUSTOMER SATISFACTION IS OUR
+                    PRIORITY</p>
+            </div>
+
+            <!-- Slideshow Navigation Arrows -->
+            <button class="slide-arrow slide-arrow-prev" id="slide-prev" aria-label="Previous slide">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="15 18 9 12 15 6" />
+                </svg>
+            </button>
+            <button class="slide-arrow slide-arrow-next" id="slide-next" aria-label="Next slide">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="9 6 15 12 9 18" />
+                </svg>
+            </button>
+
+            <!-- Dots Indicator -->
+            <div class="slide-dots" id="slide-dots">
+                <button class="slide-dot active" data-dot="0" aria-label="Go to slide 1"></button>
+                <button class="slide-dot" data-dot="1" aria-label="Go to slide 2"></button>
+                <button class="slide-dot" data-dot="2" aria-label="Go to slide 3"></button>
+                <button class="slide-dot" data-dot="3" aria-label="Go to slide 4"></button>
+                <button class="slide-dot" data-dot="4" aria-label="Go to slide 5"></button>
+            </div>
+        </section>
+
+        <!-- AP Cargo Services Preview Section -->
+        <section class="ap-services-section" id="ap-services">
+            <div class="services-section-heading">
+                <h2><span>บริการ</span> <strong>ของเรา</strong></h2>
+                <p>บริการขนส่งและโลจิสติกส์ครบวงจร ดูแลสินค้าอย่างมืออาชีพ</p>
+            </div>
+            <div class="fullwidth-service-banners">
+
+                <!-- Banner 1: Customs Brokerage -->
+                <div class="fullwidth-service-banner" style="background-image: url('images/service_customs_port.png');">
+                    <div class="banner-overlay"></div>
+                    <div class="banner-content">
+                        <div class="banner-icon">
+                            <svg width="76" height="76" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
+                                <path d="M9 11l3 3L22 4" />
+                                <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11" />
+                            </svg>
+                        </div>
+                        <h3 class="banner-title" data-i18n="ap.customs_grid_title">บริการพิธีการศุลกากร</h3>
+                        <a href="service-customs.html" class="banner-btn" data-i18n="ap.view_more">ดูเพิ่มเติม
+                            &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Banner 2: Transportation -->
+                <div class="fullwidth-service-banner" style="background-image: url('images/service_bf_transport.png');">
+                    <div class="banner-overlay"></div>
+                    <div class="banner-content">
+                        <div class="banner-icon">
+                            <svg width="76" height="76" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="1" y="3" width="15" height="13" />
+                                <polygon points="16 8 20 8 23 11 23 16 16 16 16 8" />
+                                <circle cx="5.5" cy="18.5" r="2.5" />
+                                <circle cx="18.5" cy="18.5" r="2.5" />
+                            </svg>
+                        </div>
+                        <h3 class="banner-title" data-i18n="ap.transport_grid_title">บริการด้านขนส่ง</h3>
+                        <a href="service-transport.html" class="banner-btn" data-i18n="ap.view_more">ดูเพิ่มเติม
+                            &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Banner 3: Sea Freight -->
+                <div class="fullwidth-service-banner" style="background-image: url('images/service_sea_freight_real.png');">
+                    <div class="banner-overlay"></div>
+                    <div class="banner-content">
+                        <div class="banner-icon">
+                            <svg width="76" height="76" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M2 21c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.5 0 2.5 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1" />
+                                <path d="M19.38 20A11.6 11.6 0 0 0 21 14l-9-4-9 4c0 2.9.94 5.34 2.81 7.76" />
+                                <path d="M19 13V7a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v6" />
+                                <path d="M12 10V4" />
+                                <path d="M12 4L9 6" />
+                            </svg>
+                        </div>
+                        <h3 class="banner-title" data-i18n="ap.sea_grid_title">บริการขนส่งทางเรือ</h3>
+                        <a href="service-sea.html" class="banner-btn" data-i18n="ap.view_more">ดูเพิ่มเติม
+                            &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Banner 4: Air Freight -->
+                <div class="fullwidth-service-banner" style="background-image: url('images/service_air_freight_real.png');">
+                    <div class="banner-overlay"></div>
+                    <div class="banner-content">
+                        <div class="banner-icon">
+                            <svg width="76" height="76" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.3c.4-.2.6-.6.5-1.1z" />
+                            </svg>
+                        </div>
+                        <h3 class="banner-title" data-i18n="ap.air_grid_title">บริการขนส่งทางอากาศ</h3>
+                        <a href="service-air.html" class="banner-btn" data-i18n="ap.view_more">ดูเพิ่มเติม
+                            &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Banner 5: Packing & Moving -->
+                <div class="fullwidth-service-banner" style="background-image: url('images/service_packing_real.jpg');">
+                    <div class="banner-overlay"></div>
+                    <div class="banner-content">
+                        <div class="banner-icon">
+                            <svg width="76" height="76" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z" />
+                                <path d="m3.3 7 8.7 5 8.7-5" />
+                                <path d="M12 22V12" />
+                            </svg>
+                        </div>
+                        <h3 class="banner-title" data-i18n="ap.packing_grid_title">บริการแพ็คและย้ายสินค้า</h3>
+                        <a href="service-packing.html" class="banner-btn" data-i18n="ap.view_more">ดูเพิ่มเติม
+                            &rarr;</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Our Work Gallery Section -->
+        <section class="section gallery-section" id="our-work">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge" data-i18n="gallery.badge">OUR WORK</span>
+                    <h2 class="section-title" data-i18n="gallery.title" data-i18n-html="true">ผลงาน<span
+                            class="gradient-text">ของเรา</span></h2>
+                    <p class="section-subtitle" data-i18n="gallery.subtitle">ภาพบรรยากาศการทำงานจริง ขนส่ง แพ็ค
+                        และจัดการสินค้าอย่างมืออาชีพ</p>
+                </div>
+
+                <div class="gallery-grid" id="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="images/work_01.jpg" alt="ลังไม้บรรจุสินค้าขนาดใหญ่" loading="lazy">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/work_02.jpg" alt="ขนย้ายสินค้าด้วย Forklift" loading="lazy">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/work_03.jpg" alt="ทีมงานจัดเรียงสินค้า" loading="lazy">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/work_04.jpg" alt="รถ BF Transport โหลดสินค้า" loading="lazy">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/work_05.jpg" alt="สินค้าบนพาเลทในรถบรรทุก" loading="lazy">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/work_06.jpg" alt="ตรวจสอบสินค้าในโกดัง" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Service Vehicles Section -->
+        <section class="section car-types-section" id="services-vehicles">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge" data-i18n="veh.badge">SERVICE VEHICLES</span>
+                    <h2 class="section-title" data-i18n="veh.title" data-i18n-html="true">รถ<span
+                            class="gradient-text">บริการของเรา</span></h2>
+                    <p class="section-subtitle" data-i18n="veh.subtitle">พร้อมให้บริการขนส่งครบวงจร ด้วยรถหลากหลายประเภท
+                    </p>
+                </div>
+                <div class="car-grid">
+                    <div class="car-card" id="card-4wheel">
+                        <div class="car-card-image"><img src="images/truck_4wheel_van.png" alt="รถ 4 ล้อ ตู้ทึบ"></div>
+                        <h3 class="car-card-title" data-i18n="veh.4w_title">รถ 4 ล้อ ตู้ทึบ</h3>
+                    </div>
+                    <div class="car-card" id="card-6wheel-crane">
+                        <div class="car-card-image"><img src="images/truck_6wheel_crane.png" alt="รถ 6 ล้อ ติดเครน">
+                        </div>
+                        <h3 class="car-card-title" data-i18n="veh.6wc_title">รถ 6 ล้อ ติดเครน</h3>
+                    </div>
+                    <div class="car-card" id="card-6wheel-closed">
+                        <div class="car-card-image"><img src="images/truck_6wheel_closed.png" alt="รถ 6 ล้อ ตู้ทึบ">
+                        </div>
+                        <h3 class="car-card-title" data-i18n="veh.6w_title">รถ 6 ล้อ ตู้ทึบ</h3>
+                    </div>
+                    <div class="car-card" id="card-trailer">
+                        <div class="car-card-image"><img src="images/truck_trailer.png" alt="รถเทรลเลอร์"></div>
+                        <h3 class="car-card-title" data-i18n="veh.trailer_title">รถเทรลเลอร์</h3>
+                    </div>
+                    <div class="car-card" id="card-robert">
+                        <div class="car-card-image"><img src="images/truck_robert_var.png" alt="รถโรเบท"></div>
+                        <h3 class="car-card-title" data-i18n="veh.robert_title">รถโรเบท</h3>
+                    </div>
+                    <div class="car-card" id="card-6wheel-cage">
+                        <div class="car-card-image"><img src="images/truck_6wheel_cage.png" alt="6 ล้อคอก"></div>
+                        <h3 class="car-card-title" data-i18n="veh.cage_title">6 ล้อคอก</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Policy Section -->
+        <section class="section policy-section" id="policy">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge" data-i18n="policy.badge">นโยบาย</span>
+                    <h2 class="section-title" data-i18n="policy.title" data-i18n-html="true">นโยบาย<span
+                            class="gradient-text">องค์กร</span></h2>
+                    <p class="section-subtitle" data-i18n="policy.subtitle">มุ่งมั่นในการให้บริการที่มีคุณภาพสูงสุด</p>
+                </div>
+
+                <div class="policy-grid">
+                    <!-- Company Policy -->
+                    <div class="policy-card" id="policy-company">
+                        <div class="policy-card-header">
+                            <h3 data-i18n="policy.comp_title">นโยบายองค์กร</h3>
+                        </div>
+                        <p data-i18n="policy.comp_desc">บริษัทฯ มีนโยบายและมุ่งมั่นในการให้บริการขนส่งในทุกรูปแบบ
+                            และครอบคลุมทุก ๆ ความต้องการของลูกค้าและมีนโยบายบริการ
+                            ให้ถูกต้องและส่งความเชื่อมั่นให้กับลูกค้าทุกคน และด้วยการพัฒนา และให้ความเชื่อมั่น
+                            เพื่อให้ลูกค้าได้รับบริการที่มีคุณภาพ ประสิทธิภาพสูงสุด</p>
+                    </div>
+
+                    <!-- Quality Management Policy -->
+                    <div class="policy-card" id="policy-quality">
+                        <div class="policy-card-header">
+                            <h3 data-i18n="policy.quality_title">นโยบายบริหารงานคุณภาพ</h3>
+                        </div>
+                        <ul class="policy-list">
+                            <li data-i18n="policy.q1">การขนส่งปลอดภัย ครบถ้วน ถูกต้อง ตรงต่อเวลา และสัมมาคดี
+                                ดูแลรักษาผลิตภัณฑ์สินค้าตามความต้องการของลูกค้า บริษัทให้ความสำคัญพลังสูงสุด</li>
+                            <li data-i18n="policy.q2">บุคลากรได้มีความตั้งใจทำงานร่วมกับบริษัทฯ สอดคล้อง
+                                ประสิทธิภาพคุณภาพและประสิทธิภาพสูงสุด มีการวางระบบงานอย่างเป็นระเบียบ</li>
+                            <li data-i18n="policy.q3">
+                                ความซื่อสัตย์และคุณภาพถือเป็นความสำคัญและความรับผิดชอบของพนักงานทุกคน</li>
+                            <li data-i18n="policy.q4">ปฏิบัติทุกงานตามหลักมาตรฐานและราคาเป็นมิตร ตามเงื่อนไข
+                                ได้รับให้แต่ละความต้องการของลูกค้า พนักงานทุกแผนก
+                                ปฏิบัติหน้าที่ตามมาตรฐานที่กำหนดไว้ทุกระดับ</li>
+                        </ul>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="section contact-section" id="contact">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge" data-i18n="contact.badge">ติดต่อเรา</span>
+                    <h2 class="section-title" data-i18n="contact.title" data-i18n-html="true">พร้อม<span
+                            class="gradient-text">ให้บริการ</span></h2>
+                    <p class="section-subtitle" data-i18n="contact.subtitle">ติดต่อเราได้ทุกช่องทาง เรายินดีให้บริการ
+                    </p>
+                </div>
+                <div class="contact-grid">
+                    <div class="contact-maps-wrapper">
+                        <div class="contact-map-card" id="contact-map-card-2">
+                            <div class="contact-map-header">
+                                <span data-i18n="contact.addr2_title">
+                                    <p>ที่อยู่</p>
+                                </span>
+                            </div>
+                            <iframe
+                                src="https://maps.google.com/maps?q=%E0%B8%AD%E0%B8%B2%E0%B8%84%E0%B8%B2%E0%B8%A3%E0%B8%9B%E0%B8%A5%E0%B8%AD%E0%B8%94%E0%B8%AD%E0%B8%B2%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%AA%E0%B8%B8%E0%B8%A7%E0%B8%B2%E0%B8%93%E0%B8%A0%E0%B8%B4%E0%B8%A1%E0%B8%B4&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                                width="100%" height="240" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"
+                                title="สำนักงาน 2 - อาคารปลอดอากรสุวรรณภูมิ">
+                            </iframe>
+                        </div>
+                    </div>
+                    <div class="contact-info-wrapper">
+                        <div class="contact-info-card" id="info-address2">
+                            <div class="contact-info-icon"><img src="images/map_1673245.png" alt=""></div>
+                            <div>
+                                <h4 data-i18n="contact.addr2_title">ที่อยู่</h4>
+                                <p data-i18n="contact.addr2_val" data-i18n-html="true">999 หมู่ 7 อาคาร A04 ห้อง
+                                    425<br>อาคารปลอดอากรสุวรรณภูมิ ต.ราชาเทวะ<br>อ.บางพลี จ.สมุทรปราการ 10540</p>
+                            </div>
+                        </div>
+                        <div class="contact-info-card" id="info-email">
+                            <div class="contact-info-icon"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                    width="100" height="100" viewBox="0 0 48 48">
+                                    <path fill="#4caf50" d="M45,16.2l-5,2.75l-5,4.75L35,40h7c1.657,0,3-1.343,3-3V16.2z">
+                                    </path>
+                                    <path fill="#1e88e5" d="M3,16.2l3.614,1.71L13,23.7V40H6c-1.657,0-3-1.343-3-3V16.2z">
+                                    </path>
+                                    <polygon fill="#e53935"
+                                        points="35,11.2 24,19.45 13,11.2 12,17 13,23.7 24,31.95 35,23.7 36,17">
+                                    </polygon>
+                                    <path fill="#c62828"
+                                        d="M3,12.298V16.2l10,7.5V11.2L9.876,8.859C9.132,8.301,8.228,8,7.298,8h0C4.924,8,3,9.924,3,12.298z">
+                                    </path>
+                                    <path fill="#fbc02d"
+                                        d="M45,12.298V16.2l-10,7.5V11.2l3.124-2.341C38.868,8.301,39.772,8,40.702,8h0 C43.076,8,45,9.924,45,12.298z">
+                                    </path>
+                                </svg></div>
+                            <div>
+                                <h4 data-i18n="contact.email_title">อีเมล</h4>
+                                <p>ap_bf@outlook.com<br>apcargoandbftransport@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-info-card" id="info-phone">
+                            <div class="contact-info-icon"><img src="images/phone-call_9946316.png" alt=""></div>
+                            <div>
+                                <h4 data-i18n="contact.phone_title">โทรศัพท์</h4>
+                                <p data-i18n="contact.phone_val" data-i18n-html="true">02-1346505,
+                                    02-1346772<br>062-7424956 (คุณโอ๋)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer" id="footer">
+        <div class="footer-glow"></div>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <span class="logo-text">AP Cargo Logistics<span class="logo-highlight"> &</span><span
+                                class="logo-text"> BF Transport</span></span>
+                    </a>
+                    <p class="footer-desc" data-i18n="footer.desc">AP Cargo Logistics Co., Ltd. & BF Transport Co., Ltd.
+                        — บริการขนส่งคุณภาพ บริการดี ซื่อสัตย์ ความพึงพอใจของลูกค้าสำคัญ</p>
+
+                </div>
+                <div class="footer-links-group">
+                    <h4 data-i18n="footer.menu_head">เมนูลัด</h4>
+                    <ul>
+                        <li><a href="index.html" data-i18n="nav.home">หน้าหลัก</a></li>
+                        <li><a href="#" data-i18n="nav.services">บริการ</a></li>
+                        <li><a href="#services-vehicles" data-i18n="nav.vehicles">รถบริการ</a></li>
+                        <li><a href="#policy" data-i18n="nav.policy">นโยบาย</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-i18n="footer.rights" data-i18n-html="true">&copy; 2026 AP Cargo Logistics & BF Transport.
+                    สงวนลิขสิทธิ์ทุกประการ.</p>
+            </div>
+        </div>
+        <!-- Floating Contact Button -->
+        <div class="floating-contact" id="floating-contact">
+            <div class="floating-contact-menu" id="floating-contact-menu">
+                <a href="tel:0627424956" class="floating-menu-item phone" title="โทรหาเรา">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path
+                            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                    </svg>
+                    <span>โทร 062-7424956</span>
+                </a>
+                <a href="mailto:ap_bf@outlook.com" class="floating-menu-item email" title="ส่งอีเมล">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                        <polyline points="22,6 12,13 2,6" />
+                    </svg>
+                    <span>ap_bf@outlook.com</span>
+                </a>
+            </div>
+            <a href="#contact" class="floating-contact-btn" id="floating-contact-btn" aria-label="Contact Us">
+                <svg class="icon-phone" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path
+                        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                </svg>
+                <span class="floating-contact-label" data-i18n="contact.badge">ติดต่อเรา</span>
+            </a>
+        </div>
+
+        <script src="script.js"></script>
+</body>
+
+</html>
