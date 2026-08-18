@@ -2606,3 +2606,42 @@ body {
         padding-left: 20px;
     }
 }
+
+/* Keep the tablet-sized desktop layout from letting the centered nav overlap
+   the long brand name (notably iPad landscape / Safari desktop mode). */
+@media (min-width: 993px) and (max-width: 1440px) {
+    .header-container {
+        display: grid;
+        grid-template-columns: auto minmax(0, 1fr) auto;
+        column-gap: 12px;
+        max-width: none;
+        padding-left: 20px;
+        padding-right: 8px;
+    }
+
+    .logo {
+        min-width: 0;
+        white-space: nowrap;
+    }
+
+    .logo-text {
+        font-size: clamp(1rem, 1.6vw, 1.25rem);
+    }
+
+    .nav {
+        position: static;
+        justify-self: center;
+        transform: none;
+        min-width: 0;
+    }
+
+    .nav-list {
+        gap: 0;
+    }
+
+    .nav-link {
+        padding-inline: 8px;
+        font-size: .9rem;
+        white-space: nowrap;
+    }
+}
