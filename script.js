@@ -700,3 +700,61 @@ if (floatingBtn && floatingContact) {
         }
     });
 }
+
+// ===========================
+// WEB3FORMS CONTACT FORM
+// ===========================
+const contactForm = document.getElementById('contact-form');
+const contactFormStatus = document.getElementById('contact-form-status');
+
+if (contactForm && contactFormStatus) {
+    const submitButton = contactForm.querySelector('button[type="submit"]');
+    const attachmentInput = document.getElementById('contact-attachment');
+
+    contactForm.addEventListener('submit', async (event) => {
+        event.preventDefault();
+
+        const attachment = attachmentInput?.files?.[0];
+        if (attachment && attachment.size > 5 * 1024 * 1024) {
+            contactFormStatus.textContent = 'กรุณาแนบไฟล์ที่มีขนาดไม่เกิน 5 MB';
+            contactFormStatus.className = 'contact-form-status error';
+            return;
+        }
+
+        const captchaResponse = contactForm.querySelector('[name="h-captcha-response"]')?.value;
+        if (!captchaResponse) {
+            contactFormStatus.textContent = 'กรุณายืนยันว่าคุณไม่ใช่หุ่นยนต์ก่อนส่งข้อมูล';
+            contactFormStatus.className = 'contact-form-status error';
+            return;
+        }
+
+        const originalLabel = submitButton.textContent;
+        submitButton.disabled = true;
+        submitButton.textContent = 'กำลังส่ง...';
+        contactFormStatus.textContent = '';
+        contactFormStatus.className = 'contact-form-status';
+
+        try {
+            const response = await fetch(contactForm.action, {
+                method: 'POST',
+                body: new FormData(contactForm)
+            });
+            const result = await response.json();
+
+            if (response.ok && result.success) {
+                contactForm.reset();
+                if (window.hcaptcha) window.hcaptcha.reset();
+                contactFormStatus.textContent = 'ส่งข้อความเรียบร้อยแล้ว ทีมงานจะติดต่อกลับโดยเร็วที่สุด';
+                contactFormStatus.className = 'contact-form-status success';
+            } else {
+                throw new Error(result.message || 'ไม่สามารถส่งข้อมูลได้');
+            }
+        } catch (error) {
+            contactFormStatus.textContent = error.message || 'เกิดข้อผิดพลาด กรุณาลองใหม่อีกครั้ง';
+            contactFormStatus.className = 'contact-form-status error';
+        } finally {
+            submitButton.disabled = false;
+            submitButton.textContent = originalLabel;
+        }
+    });
+}
